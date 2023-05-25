@@ -1,0 +1,13 @@
+output: rqa_0.5-4_bp
+
+imports:
+  preproc:
+    - rqa
+    - Windower
+
+preproc:
+  - Windower:
+      window: 20
+  - rqa:
+      hp: 0.5
+      lp: 4

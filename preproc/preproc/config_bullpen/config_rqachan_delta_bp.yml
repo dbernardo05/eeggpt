@@ -1,0 +1,14 @@
+output: rqachan_delta_bp
+
+imports:
+  preproc:
+    - rqa
+    - rqa_channel
+    - Windower
+
+preproc:
+  - Windower:
+      window: 20
+  - rqa_channel:
+      hp: 0.5
+      lp: 4

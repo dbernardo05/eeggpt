@@ -1,0 +1,16 @@
+output: power_ratios
+
+imports:
+  preproc:
+    - PowerRatios
+    - Windower
+
+preproc:
+  - Windower:
+      window: 20
+      srate: 250
+  - PowerRatios:
+      window: 512
+      overlap: 0.25
+      fs: 250
+      frequencies: [[0.1, 4], [4, 8], [8, 15], [15, 30], [30, 50]]

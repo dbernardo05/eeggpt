@@ -1,0 +1,12 @@
+output: stats_ref
+
+imports:
+  preproc:
+    - BasicStats
+    - Windower
+
+preproc:
+  - Windower:
+      window: 20
+      srate: 250
+  - BasicStats:

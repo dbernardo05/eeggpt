@@ -1,0 +1,13 @@
+output: mdfa_bp
+
+imports:
+  preproc:
+    - MDFA
+    - Windower
+
+preproc:
+  - Windower:
+      window: 20
+  - MDFA:
+      scstep: 8
+      qstep: 4

@@ -1,0 +1,24 @@
+output:  Alex_Gilberto_autocorrmat_bp_logreg
+
+datasets:
+  - autocorrmat_bp
+
+n_jobs: 1
+safe_old: True
+
+imports:
+  mne.decoding:
+    - Vectorizer
+  sklearn: 
+    - linear_model
+  sklearn.ensemble:
+    - BaggingClassifier
+
+model:
+  - Vectorizer:
+  - BaggingClassifier:
+      max_samples: 0.99
+      max_features: 0.99
+      random_state: 666
+      n_estimators: 5
+      base_estimator: linear_model.LogisticRegression(C=1e5)

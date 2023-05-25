@@ -1,0 +1,7 @@
+/data
+/data_TUH
+/wandb
+/test
+/preproc/data_NMT
+/preproc/data_TUH
+/preproc/nmt_scalp_eeg_dataset
